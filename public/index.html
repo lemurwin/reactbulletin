@@ -15,6 +15,203 @@
     -->
     <title>React App</title>
   </head>
+  <style>
+  #header{
+    height:60px;
+    width:100%;
+
+    margin-top:0px;
+    background-color: orange;
+    display:inline-flex;
+    justify-content:space-between;
+  /* border: 2px dotted black;*/}
+  #main{
+    display:inline-flex;
+    font-family:Helvetica, sans-serif;
+    color:white;
+    font-size: 2em;
+    margin-left:20px;
+    padding-top:10px;
+    /*border:2px dotted black;*/
+
+  }
+  #user{
+    display:inline-flex;
+    margin-right: 5%;
+    color:black;
+    font-size:1em;
+    padding-top:20px;
+    /* border:2px dotted black;*/
+
+  }
+  #picture{
+    display:inline;
+    height:45px;
+    width:45px;
+    border-radius:100%;
+    background-color: lightblue;
+    margin:-13px 5px 5px 5px;
+
+  }
+
+  #menucontainer{
+    border:2px solid black;
+    width:20%;
+    min-width: 200px;
+    max-width:300px;
+    display:inline-block;
+    margin-top: 51px;
+    margin-left: 4%;
+  }
+  #menuitem{
+    border-bottom:1px solid black;
+    padding:5px;
+
+
+  }
+  /*#menuitem:first-child  {
+    border-top:1px solid black;
+  }*/
+  #menuitem:last-child{
+    border:0px;
+  }
+  #menuitem:hover{
+    background-color:orange;
+  }
+  #menu{
+    list-style:none;
+
+    margin-left:-40px;
+    margin-top:0px;
+    margin-bottom:0px;
+
+  }
+  #bodycontainer{
+  /*   border:2px dotted black;*/
+    width:79%;
+    display:inline-block;
+    margin-left: 0px;
+    position: fixed;
+    height:800px;
+  }
+  #bodyheader{
+    width:150%;
+    height:50px;
+    background-color: orange;
+    display:flex;
+    margin-left:-45%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+/*  border:2px dotted red; */
+  }
+#maincontainer{
+  margin-left: 0px;
+  /* border:2px dashed red;*/
+}
+#bulletin{
+  color:white;
+  margin-top:3px;
+  margin-left: 35%;
+  padding-top:10px;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+#bodycontent{
+  width:100%;
+  height:600px;
+/*  border:2px dotted black; */
+  display:flex;
+  align-items: flex-start;
+
+}
+#topics{
+  display:inline-flex;
+  flex-direction: column;
+  width:60%;
+  height:100%;
+  /*border:2px dotted red; */
+}
+#chat{
+  width:30%;
+  min-width:200px;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  border:1px solid black;
+}
+#contentnav{
+
+  width:100%;
+  height:50px;
+/*  border:1px dotted black;*/
+
+
+}
+#nav{
+  display:inline;
+  padding:15px 20px;
+
+  margin-left:-5px;
+  font-family: Helvetica, sans-serif;
+  border:1px solid black;
+}
+#nav:first-child{
+  margin-left:-41px;
+}
+#nav:hover{
+  background-color: orange;
+}
+#contentdisplay{
+  height:auto;
+  width:100%;
+  background-color: orange;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow:scroll;
+  justify-content: space-around;
+  border:1px solid black;
+  margin-top: -1px;
+  margin-left: -1px;
+
+}
+#event{
+  display:flex;
+  height:80px;
+  width:30%;
+  background-color: grey;
+ border:1px solid black;
+ margin: 5px;
+ align-items: center;
+ min-width: 200px;
+ max-width: 500px;
+
+}
+#eventpic{
+  display:flex;
+  height:60px;
+  width:30%;
+  background-color:white;
+  margin-left:10px;
+
+}
+#eventdescrip{
+  height:60px;
+  width:55%;
+  background-color: lightgrey;
+  margin-left: 10px;
+}
+#entertext{
+  display:flex;
+align-items: flex-end;
+
+margin-top:100%;
+position:relative;
+/*border:2px dashed red;*/
+}
+  </style>
   <body>
     <div id="root"></div>
     <!--
